@@ -5,10 +5,12 @@ void add(node* ptr, char c) {
 	node* newq = (node*)malloc(sizeof(node));
 	node* newa = (node*)malloc(sizeof(node));
 
-	printf("What was the animal you were thinking of?");
+	printf("What was the animal you were thinking of?: ");
 	gets(newa->data);
-	gets(newa->data);
-	printf("What question should I have asked?");
+	fflush(stdin);
+
+	// gets(newa->data);
+	printf("What question should I have asked?: ");
 	gets(newq->data);
 	fflush(stdin);
 	//strcpy_s(newq->data,100, a);
