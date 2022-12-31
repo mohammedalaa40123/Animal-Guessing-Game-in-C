@@ -7,7 +7,7 @@ node* read(node* ptr, char* c) {
 
 	node* re = ptr;
 
-	while (ptr->yes != NULL) {
+	while (ptr->yes->data != NULL && ptr->no->data!=NULL) {
 		printf("%s", ptr->data);
 		scanf_s(" %c", c);
 		fflush(stdin);

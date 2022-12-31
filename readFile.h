@@ -62,7 +62,7 @@ node *readFile()
 					n++;
 				}
 			}
-			if (nullcount > n)
+			if (nullcount > n+1)
 				break;
 		}
 		return head;
