@@ -14,8 +14,10 @@ node* read(node* ptr, char* c) {
 		re = ptr;
 		if (*c == 'y' || *c == 'Y')
 			ptr = ptr->yes;
-		else ptr = ptr->no;
-
+		else if (*c == 'n' || *c == 'N')
+			ptr = ptr->no;
+		else
+			printf("You have entered an invalid input, please try again (y/n)\n");
 
 	}
 	printf("%s\n", ptr->data);

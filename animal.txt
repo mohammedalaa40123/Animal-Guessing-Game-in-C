@@ -1,0 +1,11 @@
+Does it bark?
+dog
+Does it live in the ocean?
+NULL
+NULL
+seal
+cat
+NULL
+NULL
+NULL
+NULL
