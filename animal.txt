@@ -1,11 +1,13 @@
 Does it bark?
-dog
-Does it live in the ocean?
+Dog
+n
 NULL
 NULL
-seal
-cat
+n
+l
 NULL
 NULL
+k
+Cat
 NULL
 NULL

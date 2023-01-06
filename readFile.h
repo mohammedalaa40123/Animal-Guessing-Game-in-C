@@ -5,12 +5,12 @@
 node *readFile()
 {
 	errno_t error_code;
-	FILE *Ptr2;
+	FILE *Ptr;
 	char item[100];
 	node *head;
 	node *arr1[100];
 	node *arr2[100];
-	error_code = fopen_s(&Ptr2, "animal.txt", "r");
+	error_code = fopen_s(&Ptr, "animal.txt", "r+");
 	if (error_code != 0)
 	{
 		printf("Error! Failed to open file in r mode!");
@@ -18,7 +18,7 @@ node *readFile()
 	}
 	else
 	{
-		fgets(item, 100, Ptr2);
+		fgets(item, 100, Ptr);
 		arr1[0] = (node *)malloc(sizeof(node *));
 		strcpy_s(arr1[0]->data, 100, item);
 		head = arr1[0];
@@ -30,7 +30,7 @@ node *readFile()
 			int c = 0;
 			for (int i = c; i < n * 2; i++)
 			{
-				fgets(item, 100, Ptr2);
+				fgets(item, 100, Ptr);
 				a++;
 				fflush(stdin);
 				if (strcmp(item, "NULL\n") == 0)
@@ -62,9 +62,12 @@ node *readFile()
 					n++;
 				}
 			}
-			if (nullcount > n+1)
+			if (nullcount > n + 1)
 				break;
+			//
 		}
+		fclose(Ptr);
+		// remove("animal.txt");
 		return head;
 	}
 }

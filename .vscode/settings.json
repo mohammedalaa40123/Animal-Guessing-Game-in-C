@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "compare": "c",
+        "cmath": "c",
+        "limits": "c",
+        "node.h": "c",
+        "stdlib.h": "c",
+        "writefile1.h": "c"
+    }
+}

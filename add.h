@@ -6,13 +6,14 @@ void add(node* ptr, char c) {
 	node* newa = (node*)malloc(sizeof(node));
 
 	printf("What was the animal you were thinking of?: ");
-	gets(newa->data);
-	fflush(stdin);
+
+	scanf(" %[^\n]%*c" , newa->data);
 
 	// gets(newa->data);
 	printf("What question should I have asked?: ");
-	gets(newq->data);
-	fflush(stdin);
+	scanf(" %[^\n]%*c" , newq->data);
+
+	
 	//strcpy_s(newq->data,100, a);
 	newq->yes = newa;
 	newa->yes = NULL;

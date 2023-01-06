@@ -6,6 +6,7 @@
 #include "init.h"
 #include "read.h"
 #include "add.h"
+#include "writefile1.h"
 
 int main()
 {
@@ -30,7 +31,7 @@ int main()
         }
         if (guess == 'n' || guess == 'N')
             add(re, c);
-
+        writeinFile(head);
         printf("Would you like to play again? (y/n): ");
         scanf_s(" %c", &comp);
         fflush(stdin);
