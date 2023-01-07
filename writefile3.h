@@ -16,7 +16,7 @@ void eneque(map *addresses)
 	q1 = (struct qnode *)malloc(sizeof(struct qnode));
 	q1->address = addresses;
 	q1->next = NULL;
-	if ((qfront == NULL) && (qrear == NULL))
+	if ((qfront == NULL) || (qrear == NULL))
 	{
 		qfront = qrear = q1;
 	}
@@ -45,7 +45,7 @@ void Insert_Null_Node()
 }
 void write_File()
 {
-	FILE *Ptr;
+	FILE *Ptr = NULL;
 	fopen_s(&Ptr, "animal.txt", "w");
 	while (qfront != NULL && qfront->address != NULL)
 	{

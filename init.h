@@ -14,9 +14,9 @@ void initialize(node **head)
 
 		n1->yes = yes1;
 		n1->no = no1;
-		strcpy_s(n1->data, 100, "Does it bark?");
-		strcpy_s(yes1->data, 100, "Dog");
-		strcpy_s(no1->data, 100, "Cat");
+		strcpy_s(n1->data, 100, "Does it bark?\n");
+		strcpy_s(yes1->data, 100, "Dog\n");
+		strcpy_s(no1->data, 100, "Cat\n");
 		yes1->yes = NULL;
 		yes1->no = NULL;
 		no1->yes = NULL;

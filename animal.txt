@@ -1,0 +1,15 @@
+Does it bark?
+Dog
+Can you ride it?
+NULL
+NULL
+horse
+Can it swim?
+NULL
+NULL
+dolphin
+Cat
+NULL
+NULL
+NULL
+NULL

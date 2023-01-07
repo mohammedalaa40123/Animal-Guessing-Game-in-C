@@ -5,7 +5,7 @@
 node *readFile()
 {
 	errno_t error_code;
-	FILE *Ptr;
+	FILE *Ptr = NULL;
 	char item[100];
 	node *head;
 	node *arr1[200];
@@ -13,7 +13,7 @@ node *readFile()
 	error_code = fopen_s(&Ptr, "animal.txt", "r+");
 	if (error_code != 0)
 	{
-		printf("Error! Failed to open file in r mode!");
+		printf("Error! Failed to open file in r mode!\n");
 		return -1;
 	}
 	else
