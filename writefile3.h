@@ -1,84 +1,75 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-
-#include"node.h"
-struct node1 {
-	struct node* content;
-	struct node1* next;
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "node.h"
+typedef struct node map;
+struct qnode
+{
+	struct node *address;
+	struct qnode *next;
 };
-typedef struct node node;
-typedef struct node1 node1;
-node1* front = NULL;
-node1* rear = NULL;
-void enque(node* data)
+struct qnode *qfront = NULL;
+struct qnode *qrear = NULL;
+void eneque(map *addresses)
 {
-	struct node1* newnode = (struct node1*)malloc(sizeof(struct node1));
-	newnode->content = data;
-	newnode->next = NULL;
-	if (front == NULL && rear == NULL)
+	struct qnode *q1;
+	q1 = (struct qnode *)malloc(sizeof(struct qnode));
+	q1->address = addresses;
+	q1->next = NULL;
+	if ((qfront == NULL) && (qrear == NULL))
 	{
-		front = rear = newnode;
-		return;
+		qfront = qrear = q1;
 	}
-	rear->next = newnode;
-	rear = newnode;
-}
-node* deque()
-{
-	struct node1* temp = front;
-	node* data = temp->content;
-	if (front == NULL) return;
-	if (front == rear) front = rear = NULL;
 	else
 	{
-		front = front->next;
-	}
-	free(temp);
-	return data;
-}
-// void printQueue()
-// {
-// 	struct node1* temp = front;
-// 	while (temp != NULL)
-// 	{
-// 		printf("%d\t", temp->content);
-// 		temp = temp->next;
-// 	}
-// }
-int isempty() {
-	if (front == NULL)
-		return 1;
-	else return 0;
-}
-
-void writeFile(node* head) {
-	FILE* Ptr;
-	errno_t error_code;
-	error_code = fopen_s(&Ptr, "animal.txt", "w");
-	if (error_code != 0)
-	{
-		printf("Error! Failed to open file in w mode!");
-		return -1;
-	}
-    else{
-	enque(head);
-
-	while (!isempty()) {
-
-		if (front->content->data[0]) {
-			fprintf(Ptr, "%s\n", front->content->data);
-			enque(front->content->yes);
-			enque(front->content->no);
-
+		struct qnode *temp = qrear;
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
 		}
-		else fprintf(Ptr, "%s\n", "NULL");
-		
-		deque();
-
+		temp->next = q1;
 	}
-
+}
+void pop(struct qnode **q)
+{
+	*q = (*q)->next;
+}
+void Insert_Null_Node()
+{
+	map *Null;
+	Null = (map *)malloc(sizeof(map));
+	strcpy_s(Null->data, 100, "NULL\n");
+	Null->yes = NULL;
+	Null->no = NULL;
+	eneque(Null);
+}
+void write_File()
+{
+	FILE *Ptr;
+	fopen_s(&Ptr, "animal.txt", "w");
+	while (qfront != NULL && qfront->address != NULL)
+	{
+		printf("%s\n",qfront->address->data);
+		fputs(qfront->address->data, Ptr);
+		if (strcmp(qfront->address->data, "NULL\n") != 0)
+		{
+			if (qfront->address->yes == NULL && qfront->address->no == NULL)
+			{
+				Insert_Null_Node();
+				Insert_Null_Node();
+			}
+			else
+			{
+				eneque(qfront->address->yes);
+				eneque(qfront->address->no);
+			}
+		}
+		pop(&qfront);
+	}
 	fclose(Ptr);
-    }
-
+}
+void writeFile(map *A)
+{
+	eneque(A);
+	write_File();
 }

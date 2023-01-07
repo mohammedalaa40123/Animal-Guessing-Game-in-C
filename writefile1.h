@@ -12,8 +12,8 @@ struct qnode *qfront;
 struct qnode *qrear;
 void eneque(map *addresses)
 {
-	struct qnode *q1;
-	q1 = (struct qnode *)malloc(sizeof(struct qnode));
+	struct qnode* q1;
+	q1 = (struct qnode*)malloc(sizeof(struct qnode));
 	q1->address = addresses;
 	q1->next = NULL;
 	if ((qfront == NULL) && (qrear == NULL))
@@ -22,7 +22,7 @@ void eneque(map *addresses)
 	}
 	else
 	{
-		struct qnode *temp = qrear;
+		struct qnode* temp = qrear;
 		while (temp->next != NULL)
 		{
 			temp = temp->next;
@@ -30,31 +30,27 @@ void eneque(map *addresses)
 		temp->next = q1;
 	}
 }
-void pop(struct qnode **q)
+void pop(struct qnode** q)
 {
 	*q = (*q)->next;
 }
-void Insert_Null_Node()
+void  Insert_Null_Node()
 {
-	map *Null;
-	Null = (map *)malloc(sizeof(map));
-	strcpy_s(Null->data, 100, "NULL");
+	map* Null;
+	Null = (map*)malloc(sizeof(map));
+	strcpy_s(Null->data,100,"NULL\n");
 	Null->yes = NULL;
 	Null->no = NULL;
 	eneque(Null);
 }
 void write_File()
 {
-	FILE *Ptr;
+	FILE* Ptr;
 	fopen_s(&Ptr, "animal.txt", "w");
 	while (qfront != NULL && qfront->address != NULL)
 	{
-		size_t ln = strlen(qfront->address->data) - 1;
-		if (qfront->address->data[ln] == '\n')
-			qfront->address->data[ln] = '\0';
-		fputs(qfront->address->data, Ptr);
-		fputs("\n", Ptr);
-		if (strcmp(qfront->address->data, "NULL") != 0)
+		fprintf(Ptr, "%s\n",qfront->address->data);
+		if(strcmp(qfront->address->data,"NULL\n") != 0)
 		{
 			if (qfront->address->yes == NULL && qfront->address->no == NULL)
 			{
@@ -70,8 +66,7 @@ void write_File()
 		pop(&qfront);
 	}
 	fclose(Ptr);
-}
-void writeinFile(map *A)
+}void writeFile(map *A)
 {
 	eneque(A);
 	write_File();

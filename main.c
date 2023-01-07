@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #include "node.h"
 #include "init.h"
 #include "read.h"
 #include "add.h"
-#include "writefile1.h"
+#include "writefile3.h"
 
 int main()
 {
@@ -30,8 +29,10 @@ int main()
             fflush(stdin);
         }
         if (guess == 'n' || guess == 'N')
+        {
             add(re, c);
-        writeinFile(head);
+            writeFile(head);
+        }
         printf("Would you like to play again? (y/n): ");
         scanf_s(" %c", &comp);
         fflush(stdin);

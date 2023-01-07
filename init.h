@@ -1,7 +1,7 @@
 #include "node.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "readFile.h"
+#include "readFile2.h"
 void initialize(node **head)
 {
 	if (readFile() != -1)
