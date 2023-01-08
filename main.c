@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <malloc.h>
 #include <string.h>
 #include "node.h"
 #include "init.h"
@@ -9,6 +10,8 @@
 
 int main()
 {
+    node *newq = (node *)malloc(sizeof(node));
+    node *newa = (node *)malloc(sizeof(node));
     node *head = NULL;
     initialize(&head);
     char c = 'a';
@@ -17,6 +20,7 @@ int main()
     node *re;
     while (comp == 'Y' || comp == 'y')
     {
+
         fflush(stdin);
         re = read(head, &c);
         printf("Did I guess correctly? (y/n): ");
@@ -30,7 +34,7 @@ int main()
         }
         if (guess == 'n' || guess == 'N')
         {
-            add(re, c);
+            add(re, c, newq, newa);
             writeFile(head);
         }
         printf("Would you like to play again? (y/n): ");

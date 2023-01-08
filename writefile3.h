@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<malloc.h>
 #include <string.h>
 #include "node.h"
 typedef struct node map;
@@ -47,9 +48,9 @@ void write_File()
 {
 	FILE *Ptr = NULL;
 	fopen_s(&Ptr, "animal.txt", "w");
-	while (qfront != NULL && qfront->address != NULL)
+	while (qfront != NULL && qfront->address != NULL )
 	{
-		printf("%s\n",qfront->address->data);
+		// printf("%s\n",qfront->address->data);
 		fputs(qfront->address->data, Ptr);
 		if (strcmp(qfront->address->data, "NULL\n") != 0)
 		{
