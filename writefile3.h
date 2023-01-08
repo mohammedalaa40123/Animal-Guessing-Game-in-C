@@ -48,7 +48,7 @@ void write_File()
 {
 	FILE *Ptr = NULL;
 	fopen_s(&Ptr, "animal.txt", "w");
-	while (qfront != NULL && qfront->address != NULL )
+	while (qfront != NULL && qfront->address != NULL&& qfront->address->data != NULL )
 	{
 		// printf("%s\n",qfront->address->data);
 		fputs(qfront->address->data, Ptr);

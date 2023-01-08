@@ -5,8 +5,8 @@
 #include "node.h"
 void add(node *ptr, char c)
 {
-	node *newq = (node *)malloc(sizeof(node));
-	node *newa = (node *)malloc(sizeof(node));
+	node *newq = (node *)malloc(sizeof(node*));
+	node *newa = (node *)malloc(sizeof(node*));
 	printf("What was the animal you were thinking of?: ");
 	gets(newa->data);
 	fflush(stdin);
@@ -32,16 +32,13 @@ void add(node *ptr, char c)
 		newq->no = ptr->no;
 		ptr->no = newq;
 	}
-	node *temp = ptr;
-	int flag = 0;
 	while (ptr->no != NULL)
 	{
-		if (strcmp(ptr->no->data, "Cat\n") == 0)
+		if (strcmp(ptr->no->data, "Cat\n") == 0||strcmp(ptr->no->data, "horse\n") == 0)
 		{
 			ptr->no->yes = NULL;
 			ptr->no->no = NULL;
 		}
 		ptr = ptr->no;
 	}
-	// ptr = temp;
 }

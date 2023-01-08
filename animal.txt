@@ -7,12 +7,16 @@ bray
 Can it swim?
 donkey
 str
-dolphin
+carna
 Cat
 NULL
 NULL
 mule
 horse
+shark
+dolphin
+NULL
+NULL
 NULL
 NULL
 NULL
