@@ -3,12 +3,20 @@ Dog
 Can you ride it?
 NULL
 NULL
-horse
+bray
 Can it swim?
-NULL
-NULL
+donkey
+str
 dolphin
 Cat
+NULL
+NULL
+mule
+horse
+NULL
+NULL
+NULL
+NULL
 NULL
 NULL
 NULL

@@ -10,8 +10,7 @@
 
 int main()
 {
-    node *newq = (node *)malloc(sizeof(node));
-    node *newa = (node *)malloc(sizeof(node));
+
     node *head = NULL;
     initialize(&head);
     char c = 'a';
@@ -34,7 +33,7 @@ int main()
         }
         if (guess == 'n' || guess == 'N')
         {
-            add(re, c, newq, newa);
+            add(re, c);
             writeFile(head);
         }
         printf("Would you like to play again? (y/n): ");
