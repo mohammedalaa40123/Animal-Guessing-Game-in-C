@@ -32,13 +32,13 @@ void add(node *ptr, char c)
 		newq->no = ptr->no;
 		ptr->no = newq;
 	}
-	while (ptr->no != NULL)
-	{
-		if (strcmp(ptr->no->data, "Cat\n") == 0||strcmp(ptr->no->data, "horse\n") == 0)
-		{
-			ptr->no->yes = NULL;
-			ptr->no->no = NULL;
-		}
-		ptr = ptr->no;
-	}
+	// while (ptr->no != NULL)
+	// {
+	// 	if (strcmp(ptr->no->data, "Cat\n") == 0||strcmp(ptr->no->data, "horse\n") == 0)
+	// 	{
+	// 		ptr->no->yes = NULL;
+	// 		ptr->no->no = NULL;
+	// 	}
+	// 	ptr = ptr->no;
+	// }
 }
