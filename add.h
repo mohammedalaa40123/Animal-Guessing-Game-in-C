@@ -23,6 +23,8 @@ void add(node *ptr, char c)
 	newq->yes = newa;
 	newa->yes = NULL;
 	newa->no = NULL;
+	ptr->no->yes = NULL;
+	ptr->no->no = NULL;
 
 	if (c == 'y' || c == 'Y')
 	{
