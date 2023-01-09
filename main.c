@@ -7,13 +7,10 @@
 #include "init.h"
 #include "read.h"
 #include "add.h"
-#include "writefile3.h"
+#include "writefile.h"
 
 int main()
 {
-
-
-
     node *head = NULL;
     initialize(&head);
     char c = 'a';

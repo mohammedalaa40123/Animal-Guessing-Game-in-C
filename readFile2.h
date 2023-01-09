@@ -6,7 +6,7 @@ node *readFile()
 {
 	errno_t error_code;
 	FILE *Ptr = NULL;
-	char item[1000];
+	char item[200];
 	node *head;
 	node *arr1[200];
 	node *arr2[200];
@@ -18,34 +18,32 @@ node *readFile()
 	}
 	else
 	{
-		fgets(item, 100, Ptr);
+		fgets(item, 200, Ptr);
 		arr1[0] = (node *)malloc(sizeof(node *));
-		strcpy_s(arr1[0]->data, 100, item);
+		strcpy_s(arr1[0]->data, 200, item);
 		head = arr1[0];
 		int n = 1;
 		int a = 0;
-		int nullcount = 1;
-		while (nullcount >= 1)
+		while (n)
 		{
 			int c = 0;
 			for (int i = c; i < n * 2; i++)
 			{
-				strcpy_s(item, 1000, "\n");
+				strcpy_s(item, 200, "\n");
 				while (strcmp(item, "\n") == 0)
 				{
-					fgets(item, 100, Ptr);
+					fgets(item, 200, Ptr);
 					fflush(stdin);
 				}
 				a++;
 				if (strcmp(item, "NULL\n") == 0)
 				{
 					arr2[i] = NULL;
-					nullcount++;
 				}
 				else
 				{
 					arr2[i] = (node *)malloc(sizeof(node *));
-					strcpy_s(arr2[i]->data, 100, item);
+					strcpy_s(arr2[i]->data, 200, item);
 				}
 			}
 			for (int i = c; i < n; i++)
@@ -68,6 +66,12 @@ node *readFile()
 
 			if (n == 0)
 			{
+				// for(int i=0;i<12;i++){
+				// 	if(arr1[i])
+				// 	free(arr1[i]);
+				// 	if(arr2[i])
+				// 	free(arr2[i]);
+				// }
 				fclose(Ptr);
 				return head;
 			}

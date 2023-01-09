@@ -1,0 +1,250 @@
+Does it bark?
+
+Is it Wild?
+
+Can you ride it?
+
+Wolf
+
+Does it Live in Ocean?
+
+Does it bray?
+
+Can it swim?
+
+NULL
+NULL
+Sea dog
+
+Dog
+
+donkey
+
+Is it Sterile?
+
+Is it carnivore?
+
+Can it fly?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Mule
+
+Does it live in desert?
+
+Shark
+
+Does it live in the Arctic?
+
+Does it hunt its food?
+
+Is it a farm animal?
+
+NULL
+NULL
+Camel
+
+horse
+
+NULL
+NULL
+Penguin
+
+Does it spray ink?
+
+Is it a mammal?
+
+Does it repeat your words?
+
+Do we get wool out of it?
+
+IS it a predator?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Octupus
+
+Is it big?
+
+Bat
+
+Eagle
+
+Parrot
+
+Is it an insect?
+
+Sheep
+
+Do we get eggs out of it?
+
+Is it a potato chips brand?
+
+Does it eat Bamboo?
+
+NULL
+NULL
+whale
+
+Is it delecious and expensive?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Does it produce Honey?
+
+sparrow
+
+NULL
+NULL
+Chicken
+
+Do we get milk out of it?
+
+Tiger
+
+Is it fast?
+
+Panda
+
+Is it poisonous?
+
+NULL
+NULL
+shrimp
+
+dolphin
+
+Bee
+
+Fruit Fly
+
+NULL
+NULL
+NULL
+NULL
+Goat
+
+Do we use it to pull the plough?
+
+NULL
+NULL
+Cheetah
+
+Lion
+
+NULL
+NULL
+Snake
+
+Does it climb trees?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Ox
+
+Can we cook it with Molokhia?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Is it big in size?
+
+Does it move on two legs?
+
+NULL
+NULL
+Rabbit
+
+Cow
+
+Ghorilla
+
+monkey
+
+Does it carry its baby in a pocket?
+
+Does it live in a swamp?
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Kangaroo
+
+ostrich
+
+Does it have sharp teeth?
+
+Is it slow?
+
+NULL
+NULL
+NULL
+NULL
+Crocodile
+
+Hippo
+
+Is it moist?
+
+Does it live in the jungle?
+
+NULL
+NULL
+NULL
+NULL
+snail
+
+Turtle
+
+Is it huge?
+
+Cat
+
+NULL
+NULL
+NULL
+NULL
+Elephant
+
+Is it tall?
+
+NULL
+NULL
+NULL
+NULL
+Giraffe
+
+Zebra
+
+NULL
+NULL
+NULL
+NULL
