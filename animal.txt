@@ -23,12 +23,12 @@ Mule
 Does it live in desert?
 Shark
 Does it live in the Arctic?
-Is it strong?
+Does it hunt its food?
 Is it a farm animal?
 NULL
 NULL
 Camel
-Is it big?
+horse
 NULL
 NULL
 Penguin
@@ -39,8 +39,8 @@ Do we get wool out of it?
 IS it a predator?
 NULL
 NULL
-Elephant
-horse
+NULL
+NULL
 NULL
 NULL
 NULL
@@ -51,11 +51,8 @@ Parrot
 sparrow
 Sheep?
 Do we get eggs out of it?
-Is it the name of a famous potato chips?�^@`�Does it move on two legs?
-NULL
-NULL
-NULL
-NULL
+Is it a potato chips brand?
+Cat
 NULL
 NULL
 NULL
@@ -63,10 +60,11 @@ NULL
 NULL
 NULL
 Chicken
-Do we get milk out of it and it has hornTiger
+Do we get milk out of it and it has horns?
+Tiger
 Is it fast?
-Does it carry its babies in their belly pouch?
-Cat
+NULL
+NULL
 NULL
 NULL
 Goat
@@ -75,18 +73,10 @@ NULL
 NULL
 Cheetah
 Lion
-Kangaroo
-Monkey
-NULL
-NULL
 NULL
 NULL
 Ox
 Cow
-NULL
-NULL
-NULL
-NULL
 NULL
 NULL
 NULL

@@ -14,7 +14,7 @@ struct qnode *qrear = NULL;
 void eneque(map *addresses)
 {
 	struct qnode *q1;
-	q1 = (struct qnode *)malloc(sizeof(struct qnode));
+	q1 = (struct qnode *)malloc(sizeof(struct qnode*));
 	q1->address = addresses;
 	q1->next = NULL;
 	if ((qfront == NULL) || (qrear == NULL))

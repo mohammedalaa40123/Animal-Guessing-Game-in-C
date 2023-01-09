@@ -6,7 +6,7 @@ node *readFile()
 {
 	errno_t error_code;
 	FILE *Ptr = NULL;
-	char item[100];
+	char item[1000];
 	node *head;
 	node *arr1[200];
 	node *arr2[200];
@@ -30,7 +30,7 @@ node *readFile()
 			int c = 0;
 			for (int i = c; i < n * 2; i++)
 			{
-				strcpy_s(item, 100, "\n");
+				strcpy_s(item, 1000, "\n");
 				while (strcmp(item, "\n") == 0)
 				{
 					fgets(item, 100, Ptr);
