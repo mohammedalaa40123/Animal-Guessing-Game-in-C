@@ -4,7 +4,7 @@ Is it Wild?
 
 Can you ride it?
 
-Wolf
+Is it red commonly?
 
 Does it Live in Ocean?
 
@@ -12,8 +12,10 @@ Does it bray?
 
 Can it swim?
 
-NULL
-NULL
+Fox
+
+Wolf
+
 Sea dog
 
 Dog
@@ -32,11 +34,15 @@ NULL
 NULL
 NULL
 NULL
+NULL
+NULL
+NULL
+NULL
 Mule
 
 Does it live in desert?
 
-Shark
+Is it small but deadly?
 
 Does it live in the Arctic?
 
@@ -50,8 +56,10 @@ Camel
 
 horse
 
-NULL
-NULL
+Perana
+
+Shark
+
 Penguin
 
 Does it spray ink?
@@ -64,6 +72,10 @@ Do we get wool out of it?
 
 IS it a predator?
 
+NULL
+NULL
+NULL
+NULL
 NULL
 NULL
 NULL
@@ -104,11 +116,11 @@ NULL
 NULL
 Does it produce Honey?
 
-sparrow
+Is it black?
 
 NULL
 NULL
-Chicken
+Does it love swimming
 
 Do we get milk out of it?
 
@@ -122,18 +134,22 @@ Is it poisonous?
 
 NULL
 NULL
-shrimp
+Does it have picers?
 
-dolphin
+Can it grow its parts after cutting?
 
 Bee
 
 Fruit Fly
 
-NULL
-NULL
-NULL
-NULL
+Crow
+
+Flying Squirell
+
+Does the male called gander?
+
+Chicken
+
 Goat
 
 Do we use it to pull the plough?
@@ -150,12 +166,28 @@ Snake
 
 Does it climb trees?
 
+Crab
+
+shrimp
+
+StarFish
+
+dolphin
+
 NULL
 NULL
 NULL
 NULL
 NULL
 NULL
+Is it a type of squirell?
+
+Is it big and beautiful?
+
+Goose
+
+Duck
+
 NULL
 NULL
 NULL
@@ -176,13 +208,31 @@ Does it move on two legs?
 
 NULL
 NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Peackock
+
+sparrow
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
 Rabbit
 
 Cow
 
 Ghorilla
 
-monkey
+Is it a small monkey?
 
 Does it carry its baby in a pocket?
 
@@ -196,6 +246,12 @@ NULL
 NULL
 NULL
 NULL
+NULL
+NULL
+Shimpanze
+
+monkey
+
 Kangaroo
 
 ostrich
@@ -204,6 +260,10 @@ Does it have sharp teeth?
 
 Is it slow?
 
+NULL
+NULL
+NULL
+NULL
 NULL
 NULL
 NULL
@@ -226,7 +286,7 @@ Turtle
 
 Is it huge?
 
-Cat
+Is it an insect?
 
 NULL
 NULL
@@ -236,14 +296,26 @@ Elephant
 
 Is it tall?
 
-NULL
-NULL
+Is it very small?
+
+Cat
+
 NULL
 NULL
 Giraffe
 
 Zebra
 
+Ant
+
+Cocroach
+
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
 NULL
 NULL
 NULL

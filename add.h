@@ -21,6 +21,7 @@ void add(node *ptr, char c)
 	newa->yes = NULL;
 	newa->no = NULL;
 
+
 	if (c == 'y' || c == 'Y')
 	{
 		newq->no = ptr->yes;
@@ -32,6 +33,6 @@ void add(node *ptr, char c)
 		newq->no = ptr->no;
 		ptr->no = newq;
 	}
-	free(newq);
-	free(newa);
+	// free(newq);
+	// free(newa);
 }

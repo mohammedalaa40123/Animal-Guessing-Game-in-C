@@ -19,7 +19,6 @@ int main()
     node *re;
     while (comp == 'Y' || comp == 'y')
     {
-        // system("cls");
         printf("\x1b[2J\x1b[1;1H");
         fflush(stdin);
         printf("-------------------------------\n");

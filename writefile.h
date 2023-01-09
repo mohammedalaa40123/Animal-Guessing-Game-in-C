@@ -28,7 +28,7 @@ node* deque()
 {
 	node1* temp = front;
 	node* data = temp->content;
-	if (front == NULL) return;
+	if (front == NULL) return NULL;
 	if (front == rear) front = rear = NULL;
 	else
 	{
