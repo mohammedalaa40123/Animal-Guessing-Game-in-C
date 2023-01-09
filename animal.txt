@@ -1,20 +1,90 @@
 Does it bark?
-Dog
+Is it Wild?
 Can you ride it?
-NULL
-NULL
+Wolf
+Does it Live in Ocean?
 bray?
 Can it swim?
+NULL
+NULL
+Sea dog
+Dog
 donkey
-str
-carna
+Is it Sterile?
+Is it carnivore?
+Can it fly?
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Mule
+Does it live in desert?
+Shark
+Does it live in the Arctic?
+Is it strong?
+Is it a farm animal?
+NULL
+NULL
+Camel
+Is it big?
+NULL
+NULL
+Penguin
+dolphin
+Eagle
+Does it repeat your words?
+Do we get wool out of it?
+IS it a predator?
+NULL
+NULL
+Elephant
+horse
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Parrot
+sparrow
+Sheep?
+Do we get eggs out of it?
+Is it the name of a famous potato chips?�^@`�Does it move on two legs?
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Chicken
+Do we get milk out of it and it has hornTiger
+Is it fast?
+Does it carry its babies in their belly pouch?
 Cat
 NULL
 NULL
-mule
-horse
-shark
-dolphin
+Goat
+Do we use it to pull the plough?
+NULL
+NULL
+Cheetah
+Lion
+Kangaroo
+Monkey
+NULL
+NULL
+NULL
+NULL
+Ox
+Cow
+NULL
+NULL
 NULL
 NULL
 NULL
