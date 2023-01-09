@@ -3,7 +3,7 @@ Is it Wild?
 Can you ride it?
 Wolf
 Does it Live in Ocean?
-bray?
+Does it bray?
 Can it swim?
 NULL
 NULL
