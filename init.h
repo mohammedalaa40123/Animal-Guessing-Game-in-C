@@ -4,7 +4,7 @@
 #include "readFile2.h"
 void initialize(node **head)
 {
-	if (readFile() != -1)
+	if (readFile())
 		*head = readFile();
 	else
 	{

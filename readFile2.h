@@ -14,7 +14,7 @@ node *readFile()
 	if (error_code != 0)
 	{
 		printf("Error! Failed to open file in r mode!\n");
-		return -1;
+		return NULL;
 	}
 	else
 	{
